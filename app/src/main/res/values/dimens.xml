@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="large_margin">25dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="super_large_margin">80dp</dimen>
+    <dimen name="small_text">8sp</dimen>
+    <dimen name="medium_text">14sp</dimen>
+    <dimen name="large_text">33sp</dimen>
+    <dimen name="super_large_text">30sp</dimen>
+    <dimen name="icons_margin">56dp</dimen>
+</resources>

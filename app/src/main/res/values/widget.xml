@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PanquesitoXML.Widget"/>
+
+
+        <style name="PanquesitoXML.Widget.Button">
+
+            <item name="android:background">@drawable/background_login</item>
+        </style>
+
+    <style name="PanquesitoXML.Widget.TextInputLayout">
+        <item name="background">@drawable/background_login</item>
+        <item name="hintTextColor">@color/verde_planta</item>
+        <item name="boxBackgroundColor">@color/et_background</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintTextAppearance">@style/PanquesitoXML.TextStyle</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/verde_planta</item>
+        <item name="colorControlHighlight">@color/verde_planta</item>
+    </style>
+
+
+
+
+</resources>

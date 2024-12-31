@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+        android:background="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:contentDescription="@null"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plantitas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/constraintFormulario">
+        </ImageView>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFormulario"
+            app:layout_constraintTop_toBottomOf=""
+            android:layout_width="match_parent"
+            android:layout_margin="40dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+                android:id="@+id/tv_sign_up"
+                android:textColor="@color/verde_planta"
+                style="@style/PanquesitoXML.TextStyle.Link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/small_margin"
+                app:layout_constraintStart_toEndOf="@id/tv_have_account"
+                android:text="@string/Sign_Up">
+        </TextView>
+
+        <TextView
+                android:id="@+id/tv_have_account"
+                style="@style/PanquesitoXML.TextStyle.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_sign_up"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                android:text="@string/don_t_have_account">
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                style="@style/PanquesitoXML.Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/tv_sign_up"
+                android:textSize="@dimen/medium_text"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/large_margin"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:text="@string/login_text">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+                style="@style/PanquesitoXML.TextStyle.Link"
+                android:id="@+id/tv_forgot_password"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/btn_login"
+                android:text="@string/forgot_password"
+                android:textColor="@color/verde_planta"
+                android:layout_marginBottom="@dimen/super_large_margin">
+        </TextView>
+
+        <TextView
+                android:layout_marginStart="@dimen/small_margin"
+                android:id="@+id/tv_remember_me"
+                style="@style/PanquesitoXML.TextStyle.Subtitle"
+                android:drawableStart="@drawable/ic_captcha"
+                android:drawablePadding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/btn_login"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="@dimen/super_large_margin"
+                android:text="@string/remember_me"
+                tools:ignore="UseCompatTextViewDrawableXml">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:background="@drawable/background_et"
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_password"
+                app:hintTextColor="@color/verde_planta"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/verde_planta"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:textColorHint="@color/verde_planta"
+                app:layout_constraintBottom_toTopOf="@id/tv_forgot_password">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="@color/verde_planta"
+                    android:background="@drawable/background_et"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="@dimen/medium_text"
+                    android:inputType="numberPassword">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:background="@drawable/background_et"
+                android:id="@+id/full_name_input"
+                android:layout_width="match_parent"
+                app:layout_constraintBottom_toTopOf="@id/password_input"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:hint="@string/full_name_input"
+                app:hintTextColor="@color/verde_planta"
+                android:textColorHint="@color/verde_planta"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/verde_planta"
+                android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="@color/verde_planta"
+                    android:background="@drawable/background_et"
+                    android:inputType="textPersonName"
+                    android:id="@+id/full_name"
+                    android:layout_width="match_parent"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/medium_text"
+                    android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+                android:id="@+id/login_account"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                style="@style/PanquesitoXML.TextStyle.Subtitle"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/full_name_input"
+                android:text="@string/login_to_your_account"
+                android:layout_marginBottom="@dimen/large_margin">
+        </TextView>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/login_account"
+                android:textAlignment="center"
+                android:textColor="@color/verde_planta"
+                android:text="@string/welcome_back"
+                style="@style/PanquesitoXML.TextStyle.Title"
+                android:layout_marginBottom="@dimen/small_margin">
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
