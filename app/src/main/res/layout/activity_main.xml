@@ -26,7 +26,6 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintFormulario"
-            app:layout_constraintTop_toBottomOf=""
             android:layout_width="match_parent"
             android:layout_margin="40dp"
             android:layout_height="wrap_content"

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/white"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/white"
             android:id="@+id/constraint_register"
             android:layout_width="match_parent"
-            android:layout_margin="@dimen/large_margin"
+            android:layout_margin="40dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -154,9 +156,11 @@
                 app:hintTextColor="@color/verde_planta"
                 android:hint="@string/txt_password"
                 app:passwordToggleEnabled="true"
+                android:textColorHint="@color/verde_planta"
                 android:layout_marginBottom="@dimen/large_margin"
                 app:layout_constraintBottom_toTopOf="@id/btn_sign_up">
             <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="@color/verde_planta"
                     android:background="@drawable/background_et"
                     android:id="@+id/password"
                     android:layout_width="match_parent"
@@ -175,12 +179,14 @@
                 android:layout_marginBottom="@dimen/large_margin"
                 android:hint="@string/user_email_com"
                 app:hintTextColor="@color/verde_planta"
+                android:textColorHint="@color/verde_planta"
                 app:endIconMode="clear_text"
                 android:layout_height="wrap_content">
             <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="@color/verde_planta"
                     android:background="@drawable/background_et"
                     android:inputType="textPersonName"
-                    android:id="@+id/full_name"
+                    android:id="@+id/email_tv"
                     android:layout_width="match_parent"
                     android:drawableStart="@drawable/ic_user"
                     android:drawablePadding="@dimen/medium_text"
@@ -196,9 +202,11 @@
                 android:layout_marginBottom="@dimen/large_margin"
                 android:hint="@string/full_name_input"
                 app:hintTextColor="@color/verde_planta"
+                android:textColorHint="@color/verde_planta"
                 app:endIconMode="clear_text"
                 android:layout_height="wrap_content">
             <com.google.android.material.textfield.TextInputEditText
+                    android:textColor="@color/verde_planta"
                     android:background="@drawable/background_et"
                     android:inputType="textPersonName"
                     android:id="@+id/full_name_edt"

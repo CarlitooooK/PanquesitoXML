@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/super_large_margin"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Button
+
+            android:id="@+id/btn_register_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:text="@string/register_activity">
+    </Button>
+
+    <Button
+            android:id="@+id/btn_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_activity">
+    </Button>
+</androidx.appcompat.widget.LinearLayoutCompat>

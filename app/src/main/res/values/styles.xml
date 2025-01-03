@@ -6,6 +6,12 @@
         <item name="fontFamily">@font/madani</item>
     </style>
 
+
+    <style name="colored_checkBox">
+        <item name="colorAccent">@color/verde_planta</item>
+        <item name="android:textColorSecondary">@color/verde_planta</item>
+    </style>
+
     <style name="PanquesitoXML.TextStyle.Title">
         <item name="android:textSize">@dimen/large_text</item>
     </style>
